@@ -14,8 +14,10 @@ pip3 freeze > requirements.txt
 ```
 
 # Local development with Docker
-docker build -t hello_app .
+docker build -t digarok/hello_app .
 docker run -p 5000:5000 hello_app
+docker push digarok/hello_app
+
 
 
 ## env vars for dev
