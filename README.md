@@ -13,6 +13,11 @@ pip3 install Flask
 pip3 freeze > requirements.txt
 ```
 
+# Local development with Docker
+docker build -t hello_app .
+docker run -p 5000:5000 hello_app
+
+
 ## env vars for dev
 ```
 export FLASK_APP=hello_app
